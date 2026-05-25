@@ -624,92 +624,7 @@
             margin-top: 0.75rem;
         }
 
-        /* Pricing Section */
-        .pricing {
-            background: var(--dark);
-        }
 
-        .pricing-grid {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .price-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 24px;
-            padding: 2.5rem;
-            position: relative;
-            transition: all 0.4s;
-        }
-
-        .price-card.popular {
-            border-color: rgba(0, 191, 255, 0.4);
-            background: rgba(0, 191, 255, 0.03);
-        }
-
-        .price-card.popular::before {
-            content: 'Mais Popular';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--gradient);
-            color: var(--white);
-            padding: 0.35rem 1.25rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .price-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 191, 255, 0.3);
-        }
-
-        .price-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .price-card .price {
-            font-size: 3rem;
-            font-weight: 900;
-            margin: 1rem 0;
-            color: var(--white);
-        }
-
-        .price-card .price span {
-            font-size: 1rem;
-            font-weight: 400;
-            color: var(--text-muted);
-        }
-
-        .price-card .price-features {
-            list-style: none;
-            margin: 1.5rem 0 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-
-        .price-card .price-features li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .price-card .price-features li i {
-            color: var(--success);
-            width: 16px;
-            height: 16px;
-        }
 
         /* CTA Section */
         .cta-section {
@@ -962,7 +877,6 @@
                 <li><a href="#features">Funcionalidades</a></li>
                 <li><a href="#automation">Automação</a></li>
                 <li><a href="#api">API Oficial</a></li>
-                <li><a href="#pricing">Planos</a></li>
                 <li><a href="#cta" class="nav-cta">Começar Agora</a></li>
             </ul>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
@@ -1246,61 +1160,7 @@
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="pricing" id="pricing">
-        <div class="section-header fade-up">
-            <span class="tag">Planos</span>
-            <h2>Escolha o plano ideal para seu negócio</h2>
-            <p>Comece gratuitamente e escale conforme sua operação cresce.</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="price-card fade-up">
-                <h3>Starter</h3>
-                <p style="color:var(--text-muted);font-size:0.9rem;">Para pequenas equipes</p>
-                <div class="price">R$197<span>/mês</span></div>
-                <ul class="price-features">
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Até 3 atendentes</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> 1 número WhatsApp</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Fluxos ilimitados</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> CRM básico</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Dashboard</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Suporte via chat</li>
-                </ul>
-                <a href="#cta" class="btn-secondary" style="width:100%;justify-content:center;">Começar Grátis</a>
-            </div>
-            <div class="price-card popular fade-up">
-                <h3>Profissional</h3>
-                <p style="color:var(--text-muted);font-size:0.9rem;">Para equipes em crescimento</p>
-                <div class="price">R$397<span>/mês</span></div>
-                <ul class="price-features">
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Até 10 atendentes</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> 2 números WhatsApp</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Fluxos + IA integrada</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> CRM completo</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Campanhas em massa</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Agenda integrada</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Chat interno</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Suporte prioritário</li>
-                </ul>
-                <a href="#cta" class="btn-primary" style="width:100%;justify-content:center;">Começar Grátis</a>
-            </div>
-            <div class="price-card fade-up">
-                <h3>Enterprise</h3>
-                <p style="color:var(--text-muted);font-size:0.9rem;">Para grandes operações</p>
-                <div class="price">Sob consulta</div>
-                <ul class="price-features">
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Atendentes ilimitados</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Múltiplos números</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Tudo do Profissional</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> API & Webhooks</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> White-label</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> Gerente dedicado</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i> SLA garantido</li>
-                </ul>
-                <a href="#cta" class="btn-secondary" style="width:100%;justify-content:center;">Falar com Vendas</a>
-            </div>
-        </div>
-    </section>
+
 
     <!-- CTA -->
     <section class="cta-section" id="cta">
@@ -1334,7 +1194,6 @@
             </div>
             <ul class="footer-links">
                 <li><a href="#features">Funcionalidades</a></li>
-                <li><a href="#pricing">Planos</a></li>
                 <li><a href="#">Termos de Uso</a></li>
                 <li><a href="#">Privacidade</a></li>
             </ul>
